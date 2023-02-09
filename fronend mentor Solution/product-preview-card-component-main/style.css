@@ -1,0 +1,121 @@
+
+
+
+body{
+    background-color: rgb(243,234,227);
+    
+    
+   
+    
+}
+
+
+.main-root{
+
+
+display: flex;
+align-items: center;
+align-content: center;
+
+/* change below this line to get the card on centre. */
+margin-top: 17em;
+margin-left: 38%;
+margin-right: 17%;
+
+}
+
+.left{
+
+    height: 408px;
+    width: 273px;
+    
+   
+}
+
+.right{
+
+    height: 408px;
+    background-color: white;
+    width: 273px;
+    
+    border-radius:  0 2% 2% 0 ;
+}
+
+#image-product-desktop-jpg{
+    width: 100%;
+    border-radius: 2% 0 0 2%;
+    
+}
+
+#right-text-container{
+    padding: 30px;
+    
+}
+
+#gabrielle{
+    padding-top: -23px;
+    line-height: 96%;
+}
+
+#perfume{
+    margin-top: 0px;
+    font-size: 10px;
+    opacity:0.4;
+}
+
+#descripsion-floral{
+    font-size: 13px;
+    opacity: 0.5;
+    line-height: 20px;
+}
+
+
+#pricing{
+    display:flex;
+    align-items: center;
+    margin-top: -25px;
+    
+
+}
+.pricingleft{
+    font-family: Fraunces;
+    font-size: 30px;
+    color:rgb(66, 138, 110)
+}
+
+.pricingright{
+    font-family: Montserrat;
+    padding-left: 10px;
+    
+}
+
+
+.cart-button{
+    background-color: rgb(61,128,104);
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -13px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+
+
+    font-family: Montserrat;
+    font-weight: bold;
+
+}
+
+.cart-button:hover{
+
+    background-color: rgb(24,65,49);
+    transition: background-color 0.5s;
+}
+#add-to-cart{
+   
+   
+}
+
