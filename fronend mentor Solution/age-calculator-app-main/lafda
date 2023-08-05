@@ -1,0 +1,16 @@
+Date() function se latest date le sakte hai
+
+
+form input pe jo data hai usko latest date se minus karde
+and jo result aya usko niche print karde
+
+
+bad me validation karna hai
+wo badme dekha jayega
+##########################
+
+
+phele date() se individual components kese le sakte hai.
+teen cheeze chaiye
+date , month and year
+
