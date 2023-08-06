@@ -17,6 +17,14 @@ document.getElementById("submitButton").addEventListener("click", function (e) {
   const ErrorMonth = (document.getElementById("errormonth").textContent = " ");
   const ErrorYear = (document.getElementById("erroryear").textContent = " ");
 
+  // reset border text ref 97
+
+  var borders = document.getElementsByClassName("dateborder");
+  for (var i = 0; i < borders.length; i++) {
+    borders[i].style.border = "1px solid rgb(0, 0, 0)";
+    console.log(97);
+  }
+
   // Get input values and converting them to integers or else they zero.
   const inputDay = parseInt(dateInput.value, 10) || 0;
   const inputMonth = parseInt(monthInput.value, 10) || 0;
@@ -52,7 +60,7 @@ document.getElementById("submitButton").addEventListener("click", function (e) {
     var errorYearElement = document.getElementById("erroryear");
     errorYearElement.style.display = "block";
     errorYearElement.textContent = "Invalid";
-
+    borderred();
     return;
   }
 
@@ -63,6 +71,7 @@ document.getElementById("submitButton").addEventListener("click", function (e) {
 
     errorDayElement.style.display = "block";
     errorDayElement.textContent = "Invalid";
+    borderred();
     return;
   }
 
@@ -70,6 +79,7 @@ document.getElementById("submitButton").addEventListener("click", function (e) {
     var errorMonthElement = document.getElementById("errormonth");
     errorMonthElement.style.display = "block";
     errorMonthElement.textContent = "Invalid";
+    borderred();
     return;
   }
 
@@ -82,10 +92,21 @@ document.getElementById("submitButton").addEventListener("click", function (e) {
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.opacity = "1"; // Replace "0.5" with the desired opacity value
     }
-    document.getElementById("errorday").textContent = "Future ";
-    document.getElementById("errormonth").textContent = "future";
-    document.getElementById("erroryear").textContent = "Future";
+    document.getElementById("errorday").textContent = "Use past ";
+    document.getElementById("errormonth").textContent = "Use past";
+    document.getElementById("erroryear").textContent = "Use past";
+    borderred();
     return;
+  }
+
+  ////////////////////////////
+  function borderred() {
+    if (document.getElementById("erroryear").textContent !== undefined) {
+      var borders = document.getElementsByClassName("dateborder");
+      for (var i = 0; i < borders.length; i++) {
+        borders[i].style.border = "1px solid rgb(255, 0, 0)";
+      }
+    }
   }
 
   ///////////////////////
